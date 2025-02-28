@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.imagem-container img{
+    position: absolute;
+    filter: brightness(30%);
+
+}
+
+.imagem-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteiner_titulo{
+    color: #03c4ff;
+}
+
+.conteudo {
+    font-family: 'Montserrat';
+    position: absolute;
+}
+
+.conteiner_subtitulo{
+    color: #ffffff;
+    font-family: 'Montserrat';
+}
+
+.conteiner_data {
+    color: #ffffff
+}
+
+.data2{
+    color: #03c4ff;
+    font-family: 'Montserrat';
+
+}
+
+.formulario {
+    margin-left: 20px;
+    background-color: #95989a;
+}
+
+.tags_info {
+    color: #5d5d5d;
+}
+
+
+    
+
+    
+   
