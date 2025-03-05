@@ -1,56 +1,157 @@
-body{
+:root {
+    --primary: #00baf2;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+  }
+  
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+  } 
+  
+body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-.imagem-container img{
-    position: absolute;
-    filter: brightness(30%);
 
+
+.fundo_escurecido{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('imagens/hrz-5.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    filter: brightness(30%);
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
 }
 
 .imagem-container {
+    display: flex;
     position: relative;
-    width: 100%;
+    align-items: center;
+    justify-content: center; 
+    justify-content: space-between;
     height: 100vh;
 }
 
+
 .conteiner_titulo{
-    color: #03c4ff;
+    color: var(--primary)
 }
 
 .conteudo {
     font-family: 'Montserrat';
-    position: absolute;
-}
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 230px;
 
-.conteiner_subtitulo{
+}
+    
+
+
+.conteiner_evento {
     color: #ffffff;
     font-family: 'Montserrat';
 }
 
 .conteiner_data {
-    color: #ffffff
+    color: var(--text-color);
 }
 
-.data2{
-    color: #03c4ff;
-    font-family: 'Montserrat';
-
+.conteiner_data strong{
+    color: var(--primary)
 }
+
 
 .formulario {
-    margin-left: 20px;
-    background-color: #95989a;
+    position: relative;
+    padding: 15px;
+    background-color: var(--secondary);
+    font-size: 20px;
+    margin-right: 150px;
+    width: 20%;
+    height: 42%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+     
+}
+
+.formulario .pree {
+    color: var(--text-secondary);
+    font-size: 25px;
+    font-family: 'Montserrat';
 }
 
 .tags_info {
-    color: #5d5d5d;
+    color: var(--text-tertiary);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: 'Montserrat';
+    color: var(--text-tertiary);
+    height: auto;
+    padding: 1rem; /* Usa rem para padding */
+    font-size: 1rem; /* Usando rem para fontes relativas */
+    box-sizing: border-box; /* Inclui o padding e border no tamanho do elemento */
+
+}
+
+.tags_info input{
+    border-radius: 5px;
+    border: none;
+    border-color: var(--secondary);
+    width: 100%;
+    height: 15%;
+    font-family: 'Montserrat';
+    color: var(--secondary);
+    height: auto;
+    padding: 3px;
 }
 
 
-    
 
-    
-   
+.tags_info .botao{
+    background-color:var(--primary);
+    color: var(--text-color);
+    border: none;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.tags_info select {
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    width: 100%;
+    height: 12%;
+    border: none;
+    color: var(--text-secondary);
+    font-weight: bold;
+    height: auto;
+    padding: 3px;
+}
+
+.nome,
+.email,
+.tell,
+.principal_interesse {
+    font-size: 17px;
+}
+
+
+
