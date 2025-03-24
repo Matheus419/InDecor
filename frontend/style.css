@@ -16,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
 
@@ -269,3 +270,163 @@ body {
     color: var(--text-color);
 }
 
+.ambiente  {
+    position: relative; /* Evita sobreposição */
+    margin-top: 200px; /*Ajuste conforme necessário para empurrar para baixo */
+    text-align: right;
+    background-color: white; /*Opcional, para destacar do fundo*/ 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .ambiente img{
+
+    background-position: center;
+    background-size: cover;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    margin: 15px;
+    margin-right: 150px;
+    display: flex;
+   
+
+} 
+
+.ambiente h1 {
+    font-size: 40px;
+    position: relative;
+    padding: 30px;
+    
+
+} 
+
+.img_dtl{
+    padding: 100px;
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    
+}
+
+.img_dtl img{
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    height: 400px;
+
+}
+
+.dtl_texto h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    
+    
+}
+
+.img_dtl ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.img_obj{
+    padding: 60px;
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    gap: 150px;
+    font-family: 'Montserrat';
+    
+}
+
+.img_obj img{
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    height: 400px;
+
+}
+
+.obj_texto h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    
+    
+}
+
+.img_obj ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inscricao {
+    position: relative;
+    width: 100%; /* Garante que o contêiner ocupe 100% da largura */
+    height: 300px; /* Ajuste a altura conforme necessário */
+}
+
+.inscricao img {
+    width: 100%;
+    height: 100%; /* Ajuste a altura da imagem para cobrir o contêiner */
+    object-fit: cover; /* Garante que a imagem não seja distorcida */
+    filter: brightness(30%);
+
+}
+
+.inscricao p,
+.inscricao .botao {
+    position: absolute;
+    width: 100%; /* Deixa o conteúdo centralizado na largura da imagem */
+    text-align: center;
+    z-index: 10; /* Garante que o texto fique sobre a imagem */
+    font-family: 'Montserrat';
+}
+
+.inscricao p {
+    color: white; /* Cor do texto */
+    top: 40%; /* Ajusta o título para o meio da imagem */
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+.inscricao .botao {
+    margin-top: 30px;
+    padding: 10px;
+    font-family: 'Montserrat';
+    filter: brightness(90%);
+    font-size: 20px;
+    background-color: var(--primary);
+    color: var(--text-color);
+    border: none;
+    width: 500px; /* Ajuste a largura conforme necessário */
+    top: 55%; /* Posiciona o botão abaixo do título, ajustando a distância */
+    left: 50%; /* Centraliza o botão horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição horizontal do botão */
+    z-index: 10;
+    border-radius: 2px;
+}
+
+.info3_contato{
+    font-family: 'Montserrat';
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.info3_contato h1{
+    margin-bottom: 10px;
+}
+
+.info3_contato .tr{
+    margin-bottom: 10px;
+}
